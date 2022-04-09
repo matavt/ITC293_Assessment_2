@@ -1,28 +1,49 @@
+<!--
+    ITC293 Introduction to the Web
+    Matthew Semmens
+    9/04/2022
+
+    This is the web skills page of my Assessment 2 it contains links to the other pages and brief summary of my web skills. It contains the following items required for the assessment.
+    Character Set is set to UTF-8
+
+    Inline style  
+    External style sheet.
+    Horizontal navigation
+    Paragraphs
+    unordered lists
+    Headings
+    Images
+    Internal links
+    External links
+    Email and phone links
+    Character reference
+    The Ordered list
+
+    The Internal style sheet is included on other pages.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="css/style.css"></link>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webskills</title>
-    <style>
 
-    </style>
 </head>
 <body>
-    <h1 style = "text-align:centre;background-color: aquamarine; width:550px;">Web Skills</h1>
-    <nav>
-        <table>
-            <td style="text-align: left; width: 137px;"><a href="/index.html">Home</a></td>
-            <td style="text-align: center; width:138px;"><a href="ms_a1_about.html">About</a></td>
-            <td style="text-align: center; width:138px;"><a href="ms_A1_resume.html">Resume</a></td>
-            <td style="text-align: right; width:137;"><a href="ms_A1_web_skills.html">Web Skills</a></td>
-        </table>
-    </nav>
-    <hr>
-    <div style="background-color:antiquewhite; width: 500px; padding: 25px;">
-        <p>I've been developing webskills over a number of year. These skill have involved
+    <div id="topmenu">
+        <h1 id="h1top_of_page">Web Skills</h1>
+        <nav>
+            <ul id="navlist">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/ms_a1_about.html">About</a></li>
+                <li><a href="/ms_a1_resume.html">Resume</a></li>
+                <li style="background-color: darkcyan;"><a href="/ms_a1_web_skills.html" style="color: black;">Web Skills</a></li>
+            </ul>
+        </nav>
+    </div>
+          <p>I've been developing webskills over a number of year. These skill have involved
             the Cpanel adminsitration of a number of websites including static web pages,
             Wordpress sites, webforums, and sharepoint sites running on IIS.
         </p>    
@@ -30,19 +51,24 @@
             development skills are still being worked on I have knowledge of DNS configuration
             in web nameservers related to managing websites.
         </p>
-        <div>My skills include</div>
-        <ul>
-            <li>DNS configuration</li>
-            <li>mySQL</li>
-            <li>Basic PHP</li>
-            <li>HTML</li>
-            <Li>CSS</Li>
-            <li>JavaScript</li>
-            <li>basic REACT</li>
-        </ul>
-    </div>    
+        <div style="width: 500; padding: 25px;background-color: antiquewhite;">
+            <h2>My skills include</h2><br><br>
+            <ul>
+                <li>DNS configuration</li>
+                <li>mySQL</li>
+                <li>Basic PHP</li>
+                <li>HTML</li>
+                <Li>CSS</Li>
+                <li>JavaScript</li>
+                <li>basic REACT</li>
+            </ul>
+        </div>
+  
 </body>
 <footer>
-    &copy; Matthew Semmens
+    <span class="white_text">&copy; Matthew Semmens </span>
+    <a href="tel:0444 123 456">phone:0444 123 456</a> 
+    <a href="mailto:webmaster@matavt.net">email:Matthew Semmens</a> 
+    <a href="https://www.linkedin.com/in/matthew-semmens-36495244/">Matthew Semmens Linkedin</a>
 </footer>
 </html>

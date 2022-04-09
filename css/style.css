@@ -1,0 +1,105 @@
+/* 
+    ITC293 Introduction to the Web
+    Matthew Semmens
+    9/04/2022
+
+    This style sheet contains the following CSS
+    At least two different text colours;
+    At least two different background colours (one applied to the entire webpage);
+    At least one font-family with four typefaces
+    At least two different text-decorations
+    At least one class selector and one id selector
+    Change the bullet type on your unordered list to squares
+    Change the numbers on your ordered list to roman numerials
+    Use at least one div and one span. The span has CSS applied with a class selector.
+
+    At least two different font-weight, -style and -size; are included as internal CSS on some pages.
+    Three differently aligned paragraphs are handled with inline CSS.
+*/
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;    
+}
+html{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    align-items: center;
+    background-color: #2E4057;
+    margin-top: 70px;
+}
+
+p{text-align: left; width: 500px; padding: 25px; background-color: aliceblue;}
+
+ul{list-style-type: square;}
+
+ol{
+    list-style-type: upper-roman;
+    width: 500px;
+    padding: 25px;
+    background-color: aliceblue;
+}
+
+.white_text {
+    color: white;
+}
+
+.strike{
+    text-decoration: line-through;
+}
+
+.lines{
+    text-decoration: underline overline;
+}
+
+/*CSS related to the top section of each page including the page heading H1 and the nav menu.*/
+#h1top_of_page{
+    width:550px;
+    top: 0; 
+    height: 50px;
+    text-align: center;
+}
+#topmenu{
+    position: sticky;
+    top:0%;
+    background-color: aquamarine;
+    width: 550px;
+    height: 75px;
+}
+#navlist{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    width: 550px;
+    margin: 0%;
+    margin-top: 50px;
+    height: 20px;
+}
+#navlist li{
+    display: inline;
+    float: left;    
+}
+a{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+a:link{
+    color: #F4A259;
+}
+a:visited{
+    color: #C47259;
+}
+a:hover{
+    background-color: #5E7087;
+    color: #E8EEF2;
+}
+li a:active{
+    color: bisque;
+    background-color: aquamarine;
+}
